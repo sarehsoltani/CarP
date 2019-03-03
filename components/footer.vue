@@ -1,12 +1,12 @@
 <template>
   <div class="footer">
-  <div class="d-flex flex-row-reverse justify-content-between" style="background-color:#282828!important">
-      <div class="col-5 d-flex flex-column justify-content-start" style="align-items:flex-end;">
+  <div class="footerInfo" style="background-color:#282828!important">
+      <div class="AddressInfo">
         <img class="mt-3 mr-3 mb-3" style="width:25px" src="../assets/MiniLogo.png">
         <p class="mr-3">{{footerInfo}}</p>
         <p class="mr-3">{{footerAddress}}</p>
         <p class="mr-3">{{footerPhone}}</p>
-        <p class="mr-3">{{footerEmail}}</p>
+        <p class="mr-3">{{footerEmail}}<span style="font-size: 1.2em; color: #eeeeee; font-family: Calibri">info@carpino.ir</span></p>
       </div>
       <div class="">
         <div class="container Sponsers mt-5">
@@ -19,9 +19,9 @@
         </div>
       </div>
   </div>
-    <div class="d-flex flex-row-reverse justify-content-between mt-2 mb-2 ml-5">
+    <div class="privacy d-flex flex-row-reverse justify-content-between mt-2 mb-2 ml-5">
           <p class="mt-2 mr-5" style="color: dimgray">کلیه حقوق مادی و معنوی این سامانه به همراه اپلیکیشن ها متعلق به شرکت کارپینو می باشد</p>
-          <div class="SocialNetworks ">
+          <div class="SocialNetworks">
             <a href="https://t.me/carpino" class="col-3"><img src="../assets/telegram.png"></a>
             <a href="https://www.instagram.com/carpino_app/" class="col-3"><img src="../assets/instagram.png"></a>
             <a href="https://www.linkedin.com/company/carpino/?trk=top_nav_home" class="col-3"><img src="../assets/linkedin.png"></a>
@@ -41,9 +41,10 @@
     data () {
       return {
         footerInfo:'اپلیکیشن درخواست تاکسی های رسمی شهر',
-        footerAddress:'خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه',
+        footerAddress: 'خیابن آزادی، نرسیده به میدان انقلاب،ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، ظبقه ۸ پارکینگ کاوه',
+        // footerAddress:'خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه',
         footerPhone:'تلفن :  ۰۲۱۵۳۸۵۰۱۱۱ - پشتیبانی : ۱۸۰۰  ',
-        footerEmail: ' info@carpino.ir : ایمیل ',
+        footerEmail: ' ایمیل: ',
         };
     },
     methods: {
@@ -61,24 +62,86 @@
 /*footer*/
 .footer{
   background-color: black;
+  font-family: IRYekan;
 }
-.footer p{
+.footerInfo p{
   color: #eeeeee;
   font-family: IRYekan;
-  font-size: 0.59em;
+  direction: rtl;
+  text-align: right;
+  /*justify-items: flex-start;*/
+  font-size: 0.7em;
+}
+
+.privacy p{
+  font-size: 0.7em;
+}
+.footerInfo{
+  display: flex;
+  flex-direction: row-reverse;
+  /*justify-content: space-between;*/
+}
+
+.AddressInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+@media (min-width: 240px) and (max-width: 768px) {
+  .footerInfo{
+    display: flex;
+    flex-direction: column-reverse;
+    /*align-items: flex-end;*/
+  }
+  .AddressInfo{
+    display: flex;
+    /*background-color: purple;*/
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .footer p{
+    font-size: 7px;
+  }
+
+  .footer span{
+    font-size: 55px;
+  }
+  .SocialNetworks{
+    display: none;
+    visibility: hidden;
+  }
+  .privacy p{
+    font-size: 0.45em;
+    text-align: center;
+  }
+  .Sponsers{
+    display: flex;
+    flex-direction: row-reverse;
+    /*align-items: flex-start;*/
+    justify-content: space-between;
+    width: 20em;
+    /*justify-content: flex-end;*/
+  }
+  /*.Sponsers img {*/
+    /*width: 1em;*/
+  /*}*/
+
 }
 
 .SocialNetworks img{
   width: 1.4em;
 }
 .Sponsers img{
-  width: 5em;
+  width: 4em;
 }
 .serlogo {
-  height: 5em;
-  width:  5em;
+  height: 4em;
+  width:  4em;
   cursor:pointer;
   background-color: #fff;
   border-radius: 50%
 }
+
 </style>

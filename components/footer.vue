@@ -8,15 +8,10 @@
         <p class="mr-3">{{footerPhone}}</p>
         <p class="mr-3">{{footerEmail}}<span style="font-size: 1.2em; color: #eeeeee; font-family: Calibri">info@carpino.ir</span></p>
       </div>
-      <div class="">
-        <div class="container Sponsers mt-5">
-          <a href="https://www.cyberpolice.ir/" class="col-4"><img src="../assets/fata.png"></a>
-          <a href="http://www.saramad.ir/" class="col-4"><img src="../assets/saramad.png"></a>
-          <a href="" class="col-4"><img class="serlogo"></a>
-          <!--<img class="serlogo"  style="cursor:pointer; background-color: #fff; padding: 5px; border-radius: 50%" id = "jxlzwlaorgvjfukzjzpeapfu"-->
-               <!--onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=143675&p=rfthaodsxlaogvkajyoedshw", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi'-->
-               <!--src = 'https://logo.samandehi.ir/logo.aspx?id=143675&p=nbpdshwlqftiwlbqyndtujyn' />-->
-        </div>
+      <div class="Sponsers mt-5" style="float: left">
+          <a href="https://www.cyberpolice.ir/" class="col-md-4"><img src="../assets/fata.png"></a>
+          <a href="http://www.saramad.ir/" class="col-md-4"><img src="../assets/saramad.png"></a>
+          <img class="col-md-4 serlogo" id = 'jxlzwlaorgvjfukzjzpeapfu' style = 'border-radius: 50%; cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=143675&p=rfthaodsxlaogvkajyoedshw", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = '' src = 'https://logo.samandehi.ir/logo.aspx?id=143675&p=nbpdshwlqftiwlbqyndtujyn' />
       </div>
   </div>
     <div class="privacy d-flex flex-row-reverse justify-content-between mt-2 mb-2 ml-5">
@@ -69,7 +64,6 @@
   font-family: IRYekan;
   direction: rtl;
   text-align: right;
-  /*justify-items: flex-start;*/
   font-size: 0.7em;
 }
 
@@ -79,7 +73,7 @@
 .footerInfo{
   display: flex;
   flex-direction: row-reverse;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 }
 
 .AddressInfo{
@@ -132,6 +126,10 @@
   width: 4em;
 }
 .serlogo {
+  /*height: 50px;*/
+  /*width: 50px;*/
+    /*float: left;*/
+    margin-right: 15px;
   height: 4em;
   width:  4em;
   cursor:pointer;

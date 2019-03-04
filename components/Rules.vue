@@ -1,21 +1,6 @@
  <template>
   <div>
-    <div class="headerLine">
-     <div class="container">
-       <div class="row d-flex flex-row-reverse header">
-         <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
-           <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
-           <button v-on:click.prevent="Register()" type="button" class="btn2 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
-           <button v-on:click.prevent="Login()" type="button" class="btn2 mt-4 mr-3">ورود  به  پنل سازمانی</button>
-         </div>
-         <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
-           <button v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
-           <button v-scroll-to="'.download'" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
-           <button v-scroll-to="'.download'" type="button" class=" btn2 mt-4 mr-3">تماس با ما</button>
-         </div>
-       </div>
-     </div>
-    </div>
+    <header1></header1>
     <div class="content">
       <div class="container rules">
         <h1 class="col-md-12 mb-5 title" style="">قوانین و مقررات</h1>
@@ -68,9 +53,11 @@
 
 <script>
   import footer1 from './footer'
+  import header1 from "./header";
 export default {
    components: {
-      footer1,
+     header1,
+     footer1,
     },
     data() {
      return {
@@ -107,16 +94,6 @@ export default {
 
     },
     methods: {
-      Register() {
-        window.location.href = 'http://www.carpino.ir/login';
-      },
-      Login() {
-        window.location.href = 'http://corporate.carpino.ir/#!/login';
-      },
-      About() {
-        // window.alert("salam");
-        window.location.href = './App'
-      },
     }
 }
 </script>
@@ -129,46 +106,6 @@ export default {
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-
-.headerLine{
-  background-color: white;
-  border-bottom: 1px solid dimgray;
-}
-.header a {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-
-.btn1{
-  -webkit-appearance: button;
-  max-width: 120px!important;
-  height: 45px;
-  border-radius: 5px;
-  background-color: #ca265e;
-  border: 1px solid #11111f;
-  color: whitesmoke!important;
-  font-family: IRYekan;
-  font-weight: 500;
-  font-size: 0.7em;
-}
-
-.btn2{
-  -webkit-appearance: button;
-  height: 45px;
-  border-radius: 5px;
-  background-color: white;
-  border: 1px solid #ca265e;
-  color: #ca265e;
-  font-family: IRYekan;
-  font-weight: 500;
-  font-size: 0.7em;
-}
 
 div {
   overflow: hidden;
@@ -212,14 +149,6 @@ div {
 }
 
 @media (min-width: 240px) and (max-width: 768px) {
-  .btn2 {
-    display: none;
-    visibility: hidden;
-  }
-  .btn1{
-    display: none;
-    visibility: hidden;
-  }
   .rules p{
     font-size: 15px;
   }

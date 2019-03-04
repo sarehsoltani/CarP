@@ -1,20 +1,6 @@
 <template>
   <div>
-    <div class="headerLine">
-      <div class="container">
-        <div class="row d-flex flex-row-reverse header">
-          <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
-            <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
-            <button v-on:click.prevent="Register()" type="button" class="btn2 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
-            <button v-on:click.prevent="Login()" type="button" class="btn2 mt-4 mr-3">ورود  به  پنل سازمانی</button>
-          </div>
-          <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
-            <button v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
-            <button v-on:click.prevent="About()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <header1></header1>
     <div class="body">
       <div class="container" style="">
         <div>
@@ -103,6 +89,7 @@
 <script>
   import Slick from 'vue-slick'
   import header1 from './header'
+  import router from '../router'
   import footer1 from './footer'
   export default {
     name: 'Main',
@@ -116,16 +103,6 @@
     },
     data () {
       return {
-        message: 'سفری با خیال راحت ',
-        msg1: '. ما منحصرا با خطوط تاکسی های شهر شما کار می کنیم. با راننده هایی که تمام نقاط شهر را می شناسند',
-        msg2: 'برای شروع ابتدا شماره موبایل خود را وارد کنید',
-        Info: 'کارپینو با وجود تیمی توانمند و متخصص در حوزه‌های حمل و نقل شهری و عمومی، با بهره‌مندی از اپلیکیشن‌های موبایل در جهت تأکید بر نوآوری، اعتماد و نگاه انسان‌محور، به دنبال ارائه خدمات با کیفیتی فراتر از انتظار مشتریان، ایجاد حس امنیت و لذت در سفرهای درون‌شهری است. \n' +
-          'همچنین کارپینو به امید ارتقاء جایگاه شغلیِ رانندگانِ تاکسی‌، بالا بردن سطح اجتماعی آنها و نیز بهینه‌سازی پتانسیل‌های قدیمی به دنبال افقی سبزتر و شهری منظم‌تر است. سامانه هوشمند کارپینو، بهترین راه برای رسیدن به هر مقصدی است که مد نظر شماست. شما به راحتی می توانید با انتخاب مبدا و مقصد، درخواست سفر کنید و با نزدیک‌ترین تاکسی به سوی مقصدتان راهی شوید. با راننده‌های مجرب و متعهد کارپینو که دارای مجوزهای سازمان تاکسیرانی تهران هستند، می‌توانید سفری امن و آرام را برای خود و خانوادهٔ‌تان رقم بزنید. همچنین می توانید در طول سفر، مسیر حرکت تاکسی را به صورت زنده ملاحظه فرمایید. \n' +
-          'ما برآنیم تا جهت تسهیل سفرهای شما، همیشه در دسترس‌تان باشیم',
-        footerInfo:'اپلیکیشن درخواست تاکسی های رسمی شهر',
-        footerAddress:'خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه',
-        footerPhone:'تلفن :  ۰۲۱۵۳۸۵۰۱۱۱ - پشتیبانی : ۱۸۰۰  ',
-        footerEmail: ' info@carpino.ir : ایمیل ',
         slickOptions: {
           arrows: true,
           dots: false,
@@ -146,16 +123,6 @@
       prev(){
         this.$refs.slick.prev();
       },
-      Register(){
-        window.location.href = 'http://www.carpino.ir/login';
-      },
-      Login(){
-        window.location.href = 'http://corporate.carpino.ir/#!/login';
-      },
-      About(){
-        // window.alert("salam");
-        window.location.href = './App'
-      }
     },
 
 }
@@ -173,66 +140,6 @@
 .body {
   font-family: IRYekan;
   background-color: #E2E2E2;
-}
-
-.headerLine{
-  background-color: white;
-  border-bottom: 1px solid dimgray;
-}
-
-.header a {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-
-.btn1{
-  -webkit-appearance: button;
-  max-width: 120px!important;
-  height: 45px;
-  border-radius: 5px;
-  background-color: #ca265e;
-  border: 1px solid #11111f;
-  color: whitesmoke!important;
-  font-family: IRYekan;
-  font-weight: 500;
-  font-size: 0.7em;
-}
-
-.btn2{
-  -webkit-appearance: button;
-  height: 45px;
-  border-radius: 5px;
-  background-color: white;
-  border: 1px solid #ca265e;
-  color: #ca265e;
-  font-family: IRYekan;
-  font-weight: 500;
-  font-size: 0.7em;
-}
-
-div {
-  overflow: hidden;
-}
-
-@media (min-width: 240px) and (max-width: 768px) {
-  .control{
-    display: none;
-    visibility: hidden;
-  }
-  .btn2 {
-    display: none;
-    visibility: hidden;
-  }
-  .btn1{
-    display: none;
-    visibility: hidden;
-  }
 }
 
 /*Slider*/

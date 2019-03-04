@@ -119,14 +119,9 @@
   .Sponsers{
     display: flex;
     flex-direction: row-reverse;
-    /*align-items: flex-start;*/
     justify-content: space-between;
     width: 20em;
-    /*justify-content: flex-end;*/
   }
-  /*.Sponsers img {*/
-    /*width: 1em;*/
-  /*}*/
 
 }
 

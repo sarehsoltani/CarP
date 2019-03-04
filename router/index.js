@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from '@/components/Main'
 import Download from '@/components/Download'
 import about from '@/components/about'
+import contact from '@/components/contact'
 import vueScrollTo from 'vue-scroll-to'
 
 Vue.use(Router);
@@ -18,8 +19,8 @@ export default new Router({
        //  },
     {
       path: '/',
-      name: 'about',
-      component: about
+      name: 'contact',
+      component: contact
     },
     {
       path: '/Main',

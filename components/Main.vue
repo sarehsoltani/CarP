@@ -1,14 +1,17 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row d-flex flex-row-reverse header">
-        <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
-          <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
-          <button v-on:click.prevent="Register()" type="button" class="btn2 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
-          <button v-on:click.prevent="Login()" type="button" class="btn2 mt-4 mr-3">ورود  به  پنل سازمانی</button>
-        </div>
-        <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
-          <button v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
+    <div class="headerLine">
+      <div class="container">
+        <div class="row d-flex flex-row-reverse header">
+          <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
+            <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
+            <button v-on:click.prevent="Register()" type="button" class="btn2 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
+            <button v-on:click.prevent="Login()" type="button" class="btn2 mt-4 mr-3">ورود  به  پنل سازمانی</button>
+          </div>
+          <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
+            <button v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
+            <button v-on:click.prevent="About()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
+          </div>
         </div>
       </div>
     </div>
@@ -137,17 +140,21 @@
       };
     },
     methods: {
-      next() {
+      next(){
         this.$refs.slick.next();
       },
-      prev() {
+      prev(){
         this.$refs.slick.prev();
       },
-      Register() {
+      Register(){
         window.location.href = 'http://www.carpino.ir/login';
       },
-      Login() {
+      Login(){
         window.location.href = 'http://corporate.carpino.ir/#!/login';
+      },
+      About(){
+        // window.alert("salam");
+        window.location.href = './App'
       }
     },
 
@@ -166,6 +173,11 @@
 .body {
   font-family: IRYekan;
   background-color: #E2E2E2;
+}
+
+.headerLine{
+  background-color: white;
+  border-bottom: 1px solid dimgray;
 }
 
 .header a {

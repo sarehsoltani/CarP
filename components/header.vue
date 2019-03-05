@@ -97,9 +97,9 @@
   background-color: #ca265e;
   border: 1px solid #11111f;
   color: whitesmoke!important;
-  font-family: IRYekan;
+  font-family: iranyekan;
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 0.72em;
 }
 
 .btn2{
@@ -110,9 +110,9 @@
   background-color: white;
   border: 1px solid #ca265e;
   color: #ca265e;
-  font-family: IRYekan;
+  font-family: iranyekan;
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .btn3{
@@ -123,9 +123,9 @@
   background-color: white;
   border: 1px solid #ca265e;
   color: #ca265e;
-  font-family: IRYekan;
+  font-family: iranyekan;
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 div {

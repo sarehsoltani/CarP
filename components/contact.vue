@@ -70,7 +70,7 @@ div {
 }
 
 .content{
-  font-family: IRYekan;
+  font-family: iranyekan;
   background-color: #E2E2E2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,19 +82,19 @@ div {
 }
 
 .contact-info{
-  font-family: "B Nazanin";
+  font-family: iranyekan;
   direction: rtl;
 }
 
 .contact-title {
+  font-family: iranyekan;
   text-align: right;
-  font-weight: bold;
-  font-size: 2.4em;
+  font-size: 1.4em;
   color: #ca265e;
 }
 
 .address{
-  font-size: 1.4em;
+  font-size: 1.1em;
   text-align: right;
   font-weight: 500;
 }

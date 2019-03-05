@@ -6,7 +6,7 @@
         <h5  class="p-5 m-3">کارپینو، اولین اپلیکیشن درخواست تاکسی های رسمی شهر</h5>
         <div class="row flex-row-reverse justify-content-between">
           <p   class="col-md-5 description p-5 m-3">{{about}}</p>
-          <img class="col-md-5  img-responsive" src="../assets/AboutPic.png">
+          <img class="col-md-6  img-responsive" src="../assets/AboutPic.png">
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ div {
 }
 
 .content{
-  font-family: IRYekan;
+  font-family: iranyekan;
   background-color: #E2E2E2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,15 +59,15 @@ div {
 }
 
 .about h5{
-  font-family: "B Nazanin";
-  font-weight: bold;
+  font-family: iranyekan;
+  /*font-weight: bold;*/
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .description{
   line-height: 2;
-  font-size: 14px;
+  font-size: 1.1em;
   text-align: center;
   color: #353535;
   font-weight: 100;

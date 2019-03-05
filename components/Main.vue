@@ -11,10 +11,10 @@
           <img class="img-responsive"  src="../assets/header3.jpg">
         </slick>
         <!--Slider-control-->
-        <a class="left control" id="gallery-prev" href="#home" role="button" data-slide="prev" style="left:12.5%; top:50%; bottom: 4%;">
+        <a class="left control" id="gallery-prev" href="#home" role="button" data-slide="prev" style="top:50%;">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         </a>
-        <a class="right control" id="gallery-next" href="#home" role="button" data-slide="next" style="right:12.5%; top:50%; bottom: 4%">
+        <a class="right control" id="gallery-next" href="#home" role="button" data-slide="next" style="left: 70vw; top:50%;">
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a></div>
         <!--Values-->
@@ -133,7 +133,9 @@
 
 <style>
   @import "../../node_modules/slick-carousel/slick/slick.css";
+  @import "../assets/font/Farsi_numerals/WebFonts/css/fontiran.css";
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
+  /*@import "../assets/font/font-awesome-4.7.0/fonts/B Nazanin_p30download.com.ttf";*/
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
@@ -141,7 +143,7 @@
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 
 .body {
-  font-family: IRYekan;
+  font-family: iranyekan;
   background-color: #E2E2E2;
 }
 
@@ -175,7 +177,6 @@
 
 /*about*/
 .about-title {
-  font-family: IRYekan;
   color: dimgray;
     font-size: 25px;
 }

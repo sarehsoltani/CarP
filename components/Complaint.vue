@@ -3,8 +3,8 @@
     <header1></header1>
     <div class="content">
       <div class="container Complaint pr-5 pt-5 pl-5">
-        <h4 class="p-5" style="font-size: 30px; text-align: center; font-weight: bold">نظرات و شکایات</h4>
-        <p class="mt-5 p-2 mr-5 ml-5" style="font-size: 24px; text-align: center; text-align: center">{{content}}</p>
+        <h4 class="p-5" style="font-size: 2.2em; text-align: center;">نظرات و شکایات</h4>
+        <p class="mt-5 p-3 mr-5 ml-5" style="font-size: 1.2em; text-align: center; text-align: center">{{content}}</p>
         <div class="d-flex justify-content-center" style="">
           <img class="" src="../assets/pic2.png" style="height: 500px; width: 500px;">
         </div>
@@ -49,7 +49,7 @@ div {
 }
 
 .content{
-  font-family: "B Nazanin";
+  font-family: iranyekan;
   background-color: #E2E2E2;
   background-repeat: no-repeat;
 }

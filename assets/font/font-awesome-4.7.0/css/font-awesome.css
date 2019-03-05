@@ -5,12 +5,22 @@
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'B Nazanin';
   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+ font-family: 'iranyekan';
+  src: url('../../Farsi_numerals/WebFonts/fonts/eot/iranyekanwebregular(fanum).eot');
+  src: url('../../Farsi_numerals/WebFonts/fonts/eot/iranyekanwebregular(fanum).eot') format('embedded-opentype'), url('../../Farsi_numerals/WebFonts/fonts/woff2/iranyekanwebregular(fanum).woff2') format('woff2'), url('../../Farsi_numerals/WebFonts/fonts/woff/iranyekanwebregular(fanum).woff') format('woff'), url('../../Farsi_numerals/WebFonts/fonts/ttf/iranyekanwebregular(fanum).ttf') format('truetype'), url('../../Farsi_numerals/WebFonts/fonts/svg/iranyekanwebregular(fanum).svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

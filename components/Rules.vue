@@ -112,40 +112,38 @@ div {
 }
 
 .content{
-  font-family: "B Nazanin";
+  font-family: iranyekan;
   background-color: #E2E2E2;
   background-repeat: no-repeat;
   background-size: cover;
   direction: rtl;
-  /*height: 100vh;*/
 }
 
 .rules{
   background-color: white;
-  /*height: 100vh;*/
   text-align: right;
   background-image: url("../assets/about_background.jpg");
 }
 
 .rules .title{
   text-align: center;
-  font-weight: 900;
-  font-size: 35px
+  font-size: 25px
 }
 .rules p{
   direction: rtl;
   text-align: justify;
   line-height: 1.4;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .rules h4{
-  font-weight: bold;
+  font-family: iranyekan;
+  font-size: 1.2em;
 }
 
 .rules h5{
-  font-weight: bold;
-  font-size: 1.2em;
+  ont-family: iranyekan;
+  font-size: 1em;
 }
 
 @media (min-width: 240px) and (max-width: 768px) {

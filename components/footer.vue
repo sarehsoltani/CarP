@@ -57,11 +57,11 @@
 /*footer*/
 .footer{
   background-color: black;
-  font-family: IRYekan;
+  font-family: iranyekan;
 }
 .footerInfo p{
   color: #eeeeee;
-  font-family: IRYekan;
+  font-family: iranyekan;
   direction: rtl;
   text-align: right;
   font-size: 0.7em;

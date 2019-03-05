@@ -8,10 +8,10 @@
         <p class="mr-3">{{footerPhone}}</p>
         <p class="mr-3">{{footerEmail}}<span style="font-size: 1.2em; color: #eeeeee; font-family: Calibri">info@carpino.ir</span></p>
       </div>
-      <div class="Sponsers mt-5" style="float: left">
-          <a href="https://www.cyberpolice.ir/" class="col-md-4"><img src="../assets/fata.png"></a>
-          <a href="http://www.saramad.ir/" class="col-md-4"><img src="../assets/saramad.png"></a>
-          <img class="col-md-4 serlogo" id = 'jxlzwlaorgvjfukzjzpeapfu' style = 'border-radius: 50%; cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=143675&p=rfthaodsxlaogvkajyoedshw", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = '' src = 'https://logo.samandehi.ir/logo.aspx?id=143675&p=nbpdshwlqftiwlbqyndtujyn' />
+      <div class="mt-5 Sponsers">
+          <a href="https://www.cyberpolice.ir/" class="col-4"><img src="../assets/fata.png"></a>
+          <a href="http://www.saramad.ir/" class="col-4"><img src="../assets/saramad.png"></a>
+          <img class="col-md-4 serlogo m-2" id = 'jxlzwlaorgvjfukzjzpeapfu' style = 'border-radius: 50%; cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=143675&p=rfthaodsxlaogvkajyoedshw", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = '' src = 'https://logo.samandehi.ir/logo.aspx?id=143675&p=nbpdshwlqftiwlbqyndtujyn' />
       </div>
   </div>
     <div class="privacy d-flex flex-row-reverse justify-content-between mt-2 mb-2 ml-5">
@@ -86,11 +86,9 @@
   .footerInfo{
     display: flex;
     flex-direction: column-reverse;
-    /*align-items: flex-end;*/
   }
   .AddressInfo{
     display: flex;
-    /*background-color: purple;*/
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
@@ -112,24 +110,19 @@
   }
   .Sponsers{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 20em;
+    margin-left: 12px;
+    flex-direction: row;
+    text-align: center;
   }
-
 }
 
 .SocialNetworks img{
   width: 1.4em;
 }
 .Sponsers img{
-  width: 4em;
+  width: 3.8em;
 }
-.serlogo {
-  /*height: 50px;*/
-  /*width: 50px;*/
-    /*float: left;*/
-    margin-right: 15px;
+.serlogo{
   height: 4em;
   width:  4em;
   cursor:pointer;

@@ -4,20 +4,19 @@
         <div class="row d-flex flex-row-reverse header">
           <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
             <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
-            <button v-on:click.prevent="Register()" type="button" class="btn2 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
-            <button v-on:click.prevent="Login()" type="button" class="btn2 mt-4 mr-3">ورود  به  پنل سازمانی</button>
+            <button v-on:click.prevent="Register()" type="button" class="btn3 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
+            <button v-on:click.prevent="Login()" type="button" class="btn3 mt-4 mr-3">ورود  به  پنل سازمانی</button>
           </div>
           <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
-            <button v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
-            <button v-on:click.prevent="navigate1()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
-            <button v-on:click.prevent="navigate2()" type="button" class=" btn2 mt-4 mr-3">تماس با ما</button>
+            <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
             <button v-on:click.prevent="navigate3()" type="button" class=" btn2 mt-4 mr-3">قوانین</button>
             <button v-on:click.prevent="navigate4()" type="button" class=" btn2 mt-4 mr-3">شکایات</button>
+            <button v-on:click.prevent="navigate1()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
+            <button v-on:click.prevent="navigate2()" type="button" class=" btn2 mt-4 mr-3">تماس با ما</button>
           </div>
         </div>
       </div>
     </div>
-
 </template>
 
 <script>
@@ -29,6 +28,7 @@
     },
     data () {
       return {
+
       };
     },
     methods: {
@@ -44,9 +44,8 @@
       Login(){
         window.location.href = 'http://corporate.carpino.ir/#!/login';
       },
-      About(){
-        // window.alert("salam");
-        window.location.href = './App'
+      navigate() {
+        router.push({ name: "Main" });
       },
       navigate1() {
         router.push({ name: "about" });
@@ -105,6 +104,20 @@
 
 .btn2{
   -webkit-appearance: button;
+  width: 90px!important;
+  height: 45px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ca265e;
+  color: #ca265e;
+  font-family: IRYekan;
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.btn3{
+  -webkit-appearance: button;
+  max-width: 120px!important;
   height: 45px;
   border-radius: 5px;
   background-color: white;
@@ -125,6 +138,10 @@ div {
     visibility: hidden;
   }
   .btn1{
+    display: none;
+    visibility: hidden;
+  }
+  .btn3{
     display: none;
     visibility: hidden;
   }

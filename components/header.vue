@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row d-flex flex-row-reverse header">
           <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
-            <a href="#https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
+            <a href="https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
             <button v-on:click.prevent="Register()" type="button" class="btn3 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
             <button v-on:click.prevent="Login()" type="button" class="btn3 mt-4 mr-3">ورود  به  پنل سازمانی</button>
           </div>
@@ -60,7 +60,6 @@
         router.push({ name: "Complaint" });
       }
     },
-
 }
 </script>
 

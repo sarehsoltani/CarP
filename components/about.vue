@@ -6,7 +6,7 @@
         <h5  class="p-5 m-3">کارپینو، اولین اپلیکیشن درخواست تاکسی های رسمی شهر</h5>
         <div class="row flex-row-reverse justify-content-between">
           <p   class="col-md-5 description p-5 m-3">{{about}}</p>
-          <img class="col-md-6  img-responsive" src="../assets/AboutPic.png">
+          <img class="col-md-6" src="../assets/AboutPic.png">
         </div>
       </div>
     </div>

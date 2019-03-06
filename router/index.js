@@ -6,6 +6,7 @@ import about from '@/components/about'
 import contact from '@/components/contact'
 import Rules from '@/components/Rules'
 import Complaint from '@/components/Complaint'
+import IOS from '@/components/IOS'
 import vueScrollTo from 'vue-scroll-to'
 
 Vue.use(Router);
@@ -37,6 +38,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: contact
+    },
+    {
+      path: '/IOS',
+      name: 'IOS',
+      component: IOS
     }
   ]
 })

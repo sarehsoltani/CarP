@@ -38,7 +38,7 @@
             <img class="row col-md-5 col-sm-5 col-lg-5 mt-5 img-responsive" id="dlPic" src="../assets/mobile.png">
             <div class="row col-md-7 col-sm-7 col-lg-7 mt-5 d-flex flex-column justify-content-center dlContent">
               <div class="d-flex flex-row justify-content-end m-3" style="text-align: center">
-                <h5 style="font-family: IRYekan; text-align: center; font-size: 14px">دانلود اپلیکیشن مسافر</h5>
+                <h5 style="font-family: iranyekan; text-align: center; font-size: 20px">دانلود اپلیکیشن مسافر</h5>
               </div>
               <div class="mt-5">
                 <div class="row dlBtn">
@@ -58,7 +58,7 @@
                   </a>
                 </div>
                 <div class="row dlBtn">
-                  <a href="https://new.sibapp.com/applications/carpino-dev-1" class="m-4">
+                  <a v-on:click.prevent="navigate()" class="m-4" href="#">
                     <img class="img-responsive" src="../assets/button-0۶_5.png">
                   </a>
                 </div>
@@ -125,6 +125,9 @@
       },
       prev(){
         this.$refs.slick.prev();
+      },
+      navigate() {
+        router.push({ name: "IOS" });
       },
     },
 

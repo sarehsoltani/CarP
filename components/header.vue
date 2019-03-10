@@ -8,6 +8,7 @@
             <button v-on:click.prevent="Login()" type="button" class="btn3 mt-4 mr-3">ورود  به  پنل سازمانی</button>
           </div>
           <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
+            <!--v-scroll-to="'.download'" -->
             <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
             <button v-on:click.prevent="navigate3()" type="button" class=" btn2 mt-4 mr-3">قوانین</button>
             <button v-on:click.prevent="navigate4()" type="button" class=" btn2 mt-4 mr-3">شکایات</button>
@@ -46,6 +47,9 @@
       },
       navigate() {
         router.push({ name: "Main" });
+        // let element = this.$refs[refName];
+        // let top = element.offsetTop;
+        //  window.scrollTo(0, top);
       },
       navigate1() {
         router.push({ name: "about" });
@@ -86,7 +90,6 @@
   line-height: 25px;
   border-radius: 4px;
 }
-
 
 .btn1{
   -webkit-appearance: button;
@@ -131,7 +134,7 @@ div {
   overflow: hidden;
 }
 
-@media (min-width: 240px) and (max-width: 768px) {
+@media (min-width: 240px) and (max-width: 1024px) {
   .btn2 {
     display: none;
     visibility: hidden;

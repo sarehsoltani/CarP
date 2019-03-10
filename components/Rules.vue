@@ -99,7 +99,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";

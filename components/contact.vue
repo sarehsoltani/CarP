@@ -1,22 +1,23 @@
 <template>
-  <div>
-    <header1></header1>
-    <div class="content">
-      <div class="container contact p-5">
-        <div class="row flex-row-reverse justify-content-between">
-          <div class="col-md-6 contact-info d-flex flex-column">
-            <h3 class="contact-title p-4 mb-3 mt-5">تماس با ما</h3>
-            <p class="p-4 address">آدرس دفتر مرکزی: تهران، خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه</p>
-            <div class="row p-4 flex-column information">
-              <div class="info address col-md-9 mb-3">
+  <div class="body">
+    <div class="wrapper">
+      <header1></header1>
+      <div class="content" >
+      <div class="container contact p-5 ">
+        <div class="d-flex flex-row-reverse justify-content-between p-5 mt-5">
+          <div class="col-md-6 contact-info d-flex flex-column p-4">
+            <h3 class="contact-title pt-5 pr-5  mb-3 mt-5">تماس با ما</h3>
+            <p class="pr-5 pt-5 p-3 pb-3 address" style="line-height: 2">آدرس دفتر مرکزی: تهران، خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه</p>
+            <div class="d-flex p-5 flex-column information">
+              <div class="info address mb-3">
                 <div class="title" style="float: right;">شماره تلفن ثابت:</div>
-                <div class="value english">+98 (21) 96993333</div>
+                <div class="value english">+98 (21) 53850111</div>
               </div>
-              <div class="info address col-md-9 mb-3">
+              <div class="info address  mb-3">
                 <div class="title" style="float: right;">شماره پشتیبانی:</div>
                 <div class="value english">+98 (21) 1800</div>
               </div>
-              <div class="info address col-md-9 mb-3">
+              <div class="info address mb-3">
                 <div class="title" style="float: right;">پست الکترونیکی:</div>
                 <div class="value">
                   <a href="mailto:info@carpino.ir"><span itemprop="email">info@carpino.ir</span></a>
@@ -30,55 +31,64 @@
               <a href="https://twitter.com/carpino_app/" class="col-md-1"><img src="../assets/Tweeter.png" style="width: 1.6em"></a>
             </div>
           </div>
-          <img class="col-md-4 mt-5 img-responsive" src="../assets/PicApp1.png">
+          <div class="col-md-6 mt-5 p-5">
+            <img class="img-responsive" src="../assets/PicApp1.png">
+          </div>
         </div>
       </div>
     </div>
-  <footer1></footer1>
+    </div>
+    <footer1 class="footer"></footer1>
   </div>
-
 </template>
-
 <script>
-  import footer1 from './footer'
-  import header1 from "./header";
+import footer1 from './footer'
+import header1 from './header'
 export default {
-   components: {
-     footer1,
-     header1,
+    name: 'contact',
+    components: {
+      header1,
+      footer1,
     },
-    data() {
-     return{
-     }
+    props: {
+      images: Array,
+    },
+    data () {
+      return {
+           };
     },
     methods: {
-    }
+    },
 }
+
+
 </script>
-
-
-<style>
+<style scoped>
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
-  @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
-  @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-  @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";
-  @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+.body {
+  /*height: 100%;*/
+  margin: 0;
+}
+.wrapper {
+  min-height: calc(100vh - 180px);
+}
 
-div {
-  overflow: hidden;
+.footer{
+  height: 180px;
 }
 
 .content{
   font-family: iranyekan;
   background-color: #E2E2E2;
-  background-repeat: no-repeat;
+  /*background-repeat: repeat-y;*/
   background-size: cover;
 }
 
 .contact{
-  background-color: white;
   background-image: url("../assets/about_background.jpg");
+  background-size: cover;
+  min-height: calc(100vh - 200px);
 }
 
 .contact-info{
@@ -89,7 +99,7 @@ div {
 .contact-title {
   font-family: iranyekan;
   text-align: right;
-  font-size: 1.4em;
+  font-size: 1.7em;
   color: #ca265e;
 }
 

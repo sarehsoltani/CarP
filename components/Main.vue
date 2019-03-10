@@ -1,23 +1,26 @@
 <template>
-  <div>
+  <div id="Main">
     <header1></header1>
     <div class="body">
       <div class="container" style="">
         <div>
-        <!--Slider-->
-        <slick ref="slick" :options="slickOptions" style=" position: relative">
-          <img class="img-responsive" src="../assets/header1.jpg">
-          <img class="img-responsive"  src="../assets/header2.jpg">
-          <img class="img-responsive"  src="../assets/header3.jpg">
-        </slick>
-        <!--Slider-control-->
-        <a class="left control" id="gallery-prev" href="#home" role="button" data-slide="prev" style="top:50%;">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right control" id="gallery-next" href="#home" role="button" data-slide="next" style="left: 70vw; top:50%;">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a></div>
+          <!--Slider-->
+          <slick ref="slick" :options="slickOptions" style=" position: relative">
+            <img class="img-responsive" src="../assets/header1.jpg">
+            <img class="img-responsive"  src="../assets/header2.jpg">
+            <img class="img-responsive"  src="../assets/header3.jpg">
+          </slick>
+          <!--Slider-control-->
+          <!--<a class="control" id="gallery-prev" href="#home" role="button" data-slide="prev" style="right: 60vw; top:30vh;">-->
+            <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+          <!--</a>-->
+          <!--<a class="control" id="gallery-next" href="#home" role="button" data-slide="next" style="left:60vw; top:30vh;">-->
+            <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+          <!--</a>-->
+        </div>
         <!--Values-->
+         <!--<router-link to="#services">Services</router-link>-->
+       <!--<a class="porto-button" @click="scrollMeTo('porto')">Porto, Portugal</a>-->
         <div class="" style="background-color: white">
           <div class="row justify-content-center values">
             <img class="p-1" style="" src="../assets/c.jpg">
@@ -31,25 +34,25 @@
             <img class="img-responsive col-md-12 col-sm-12 col-lg-12" src='../assets/route.jpg'>
           </div>
         </div>
+        <!--<div ref="porto" class="fl-porto">salam</div>-->
         <!--Download-->
         <div>
-          <div class="download" style="background-color: white;">
-            <!--<div class="download d-flex flex-row justify-content-end" style="background-color: white; height: 75vh">-->
+          <div class="download" id="services" style="background-color: white;">
             <img class="row col-md-5 col-sm-5 col-lg-5 mt-5 img-responsive" id="dlPic" src="../assets/mobile.png">
             <div class="row col-md-7 col-sm-7 col-lg-7 mt-5 d-flex flex-column justify-content-center dlContent">
               <div class="d-flex flex-row justify-content-end m-3" style="text-align: center">
-                <h5 style="font-family: iranyekan; text-align: center; font-size: 20px">دانلود اپلیکیشن مسافر</h5>
+                <h5 class="dlTitle">دانلود اپلیکیشن مسافر</h5>
               </div>
-              <div class="mt-5">
-                <div class="row dlBtn">
+              <div class="mt-5 dlArea">
+                <div class="row downloadButton">
                   <a href="https://www.cafebazaar.ir/app/com.radnik.carpino.passenger/?l=fa" class="m-4">
                     <img class="img-responsive"  src="../assets/button-0۴_3.png">
                   </a>
-                  <a href="https://carpino.ir/statics/passenger.apk" class="m-4">
+                  <a href="https://carpino.ir/statics/passenger.apk" class="m-4 ">
                     <img class="img-responsive " src="../assets/button-0۷_6.png">
                   </a>
                 </div>
-                <div class="row dlBtn">
+                <div class="row downloadButton">
                   <a href="https://www.iranapps.ir/app/com.radnik.carpino.passenger" class="m-4">
                     <img class="img-responsive" src="../assets/button-0۵_4.png">
                   </a>
@@ -57,9 +60,9 @@
                     <img class="img-responsive" src="../assets/button-0۳_2.png">
                   </a>
                 </div>
-                <div class="row dlBtn">
-                  <a v-on:click.prevent="navigate()" class="m-4" href="#">
-                    <img class="img-responsive" src="../assets/button-0۶_5.png">
+                <div class="row downloadButton">
+                  <a v-on:click.prevent="navigate()" class="m-4 " href="#">
+                    <img class="img-responsive" src="../assets/logo-Stors-0۸.png">
                   </a>
                 </div>
               </div>
@@ -128,17 +131,22 @@
       },
       navigate() {
         router.push({ name: "IOS" });
+        window.scrollTo(0,0);
       },
+      scrollMeTo(refName) {
+       let element = this.$refs[refName];
+       let top = element.offsetTop;
+       window.scrollTo(0, top);
+      }
     },
 
 }
 </script>
 
-<style>
+<style scoped>
   @import "../../node_modules/slick-carousel/slick/slick.css";
   @import "../assets/font/Farsi_numerals/WebFonts/css/fontiran.css";
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
-  /*@import "../assets/font/font-awesome-4.7.0/fonts/B Nazanin_p30download.com.ttf";*/
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
@@ -191,13 +199,19 @@
 }
 
 /*Download*/
-.dlBtn{
+
+.dlTitle{
+  font-family: iranyekan;
+  text-align: center;
+  font-size: 23px;
+}
+.downloadButton{
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
 
-.dlBtn img{
+.downloadButton img{
   width: 200px;
 }
 
@@ -242,15 +256,29 @@
     text-align: center;
     /*width: vw;*/
   }
-  .dlBtn{
+
+  .dlArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+  }
+  .downloadButton{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .dlBtn img{
-    width: 180px;
+  .downloadButton img{
+    width: 220px;
   }
+  .dlTitle{
+    font-family: iranyekan;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 5vw;
+}
 }
 
 </style>

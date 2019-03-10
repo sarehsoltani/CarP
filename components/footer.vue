@@ -36,8 +36,7 @@
     data () {
       return {
         footerInfo:'اپلیکیشن درخواست تاکسی های رسمی شهر',
-        footerAddress: 'خیابن آزادی، نرسیده به میدان انقلاب،ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، ظبقه ۸ پارکینگ کاوه',
-        // footerAddress:'خیابان آزادی، نرسیده به میدان انقلاب، ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه',
+        footerAddress: 'خیابن آزادی، نرسیده به میدان انقلاب،ابتدای خیابان بهزاد، جنب سازمان تاکسیرانی، طبقه ۸ پارکینگ کاوه',
         footerPhone:'تلفن :  ۰۲۱۵۳۸۵۰۱۱۱ - پشتیبانی : ۱۸۰۰  ',
         footerEmail: ' ایمیل: ',
         };
@@ -48,7 +47,9 @@
 }
 </script>
 
-<style>
+<style scoped>
+  @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
+  @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css";

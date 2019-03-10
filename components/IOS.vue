@@ -4,16 +4,18 @@
   <div class="content">
       <div class="container description">
         <h3 class="col-md-12 mb-5 mt-5 title" style="">مراحل دانلود و نصب اپلیکیشن کارپینو نسخه IOS </h3>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-3">۱- قبل از نصب نسخه‌ی جدید مطمئن شوید موارد زیر را رعایت کرده‌اید:</h5>
+        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">۱- قبل از نصب نسخه‌ی جدید مطمئن شوید موارد زیر را رعایت کرده‌اید:</h5>
         <p class="mr-5 pl-5 pr-5">{{Rule2}}</p>
         <p class="mr-5 pl-5 pr-5">{{Rule3}}</p>
         <p class="mr-5 pl-5 pr-5">{{Rule4}}</p>
         <h5 class="mr-2 pl-5 pr-5 mt-5 mb-3">۲- برای دانلود از دکمه «دریافت نسخه iOS » در پایین استفاده کنید: </h5>
-        <div class="d-flex flex-row justify-content-center mb-5">
-          <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="dlBtn mt-4">دریافت نسخه iOS کارپینو</button>
+        <div class="download_link d-flex flex-row justify-content-center mb-5">
+          <a v-on:click.prevent="download()" class="m-4" href="#">
+            <img class="img-responsive" src="../assets/button-0۶_5.jpg">
+          </a>
         </div>
         <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4"> 3-	در پنجره باز شده دکمه «Open» را انتخاب کنید و در پنجره بعدی دکمه «Install» را لمس کنید. </h5>
-        <div class="row d-flex flex-row justify-content-center mb-5 p-5">
+        <div class="sec2 row d-flex flex-row justify-content-center mb-5 p-5">
           <img class="col-md-3 m-1 Section1 mb-4" src="../assets/1.png">
           <img class="col-md-3 m-1 Section1 mb-4" src="../assets/2.png">
           <img class="col-md-3 m-1 Section1" src="../assets/3.png">
@@ -68,10 +70,13 @@ export default {
        }
     },
     methods: {
+    download(){
+        window.location = 'itms-services://?action=download-manifest&url=https://carpino.ir/carpino.plist';
+      },
     }
 }
 </script>
-<style>
+<style scoped>
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.css";
   @import "../assets/font/font-awesome-4.7.0/css/font-awesome.min.css";
   @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
@@ -105,39 +110,47 @@ export default {
 }
 
 .description h5{
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .Section1{
   height: 450px;
 }
 
-.dlBtn{
-  -webkit-appearance: button;
-  width: 250px!important;
-  height: 55px;
-  border-radius: 5px;
-  background-color: black;
-  border: 1px solid #11111f;
-  color: whitesmoke!important;
-  font-family: iranyekan;
-  font-weight: 500;
-  font-size: 1em;
-}
+.download_link img{
+    width: 180px;
+  }
+/*.dlBtn{*/
+  /*-webkit-appearance: button;*/
+  /*text-align: center;*/
+  /*width: 250px!important;*/
+  /*height: 55px;*/
+  /*border-radius: 5px;*/
+  /*background-color: black;*/
+  /*border: 1px solid #11111f;*/
+  /*color: whitesmoke!important;*/
+  /*font-family: iranyekan;*/
+  /*font-weight: 500;*/
+  /*font-size: 1em;*/
+/*}*/
 
 @media (min-width: 240px) and (max-width: 768px) {
  .description .title{
   font-size: 1em;
 }
   .description p{
-    font-size: 0.78em;
+    font-size: 0.67em;
   }
   .description h5{
-    font-size: 0.81em;
+    font-size: 0.7em;
     font-weight: bold;
   }
   .description .Section1{
-    width: 200px;
-    height: 400px;
+    width: 180px;
+    height: 280px;
   }
+  .download_link img{
+    width: 180px;
+  }
+
 }
 </style>

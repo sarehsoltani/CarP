@@ -3,49 +3,49 @@
   <header1></header1>
   <div class="content">
       <div class="container description">
-        <h3 class="col-md-12 mb-5 mt-5 title" style="">مراحل دانلود و نصب اپلیکیشن کارپینو نسخه IOS </h3>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">۱- قبل از نصب نسخه‌ی جدید مطمئن شوید موارد زیر را رعایت کرده‌اید:</h5>
-        <p class="mr-5 pl-5 pr-5">{{Rule2}}</p>
-        <p class="mr-5 pl-5 pr-5">{{Rule3}}</p>
-        <p class="mr-5 pl-5 pr-5">{{Rule4}}</p>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-3">۲- برای دانلود از دکمه «دریافت نسخه iOS » در پایین استفاده کنید: </h5>
+        <h3 class="col-md-12 mt-5 title">مراحل دانلود و نصب اپلیکیشن کارپینو نسخه IOS </h3>
+        <h5 class="mr-2 pl-4 pr-5 mt-1 mb-3">۱- قبل از نصب نسخه‌ی جدید مطمئن شوید موارد زیر را رعایت کرده‌اید:</h5>
+        <p class="mr-3 ml-5 pl-5 pr-5">{{Rule2}}</p>
+        <p class="mr-3 ml-5 pl-5 pr-5">{{Rule3}}</p>
+        <p class="mr-3 ml-5 pl-5 pr-5">{{Rule4}}</p>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">۲- برای دانلود از دکمه «دریافت نسخه iOS » در پایین استفاده کنید: </h5>
         <div class="download_link d-flex flex-row justify-content-center mb-5">
           <a v-on:click.prevent="download()" class="m-4" href="#">
             <img class="img-responsive" src="../assets/button-0۶_5.jpg">
           </a>
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4"> 3-	در پنجره باز شده دکمه «Open» را انتخاب کنید و در پنجره بعدی دکمه «Install» را لمس کنید. </h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3"> 3-	در پنجره باز شده دکمه «Open» را انتخاب کنید و در پنجره بعدی دکمه «Install» را لمس کنید. </h5>
         <div class="sec2 row d-flex flex-row justify-content-center mb-5 p-5">
           <img class="col-md-3 m-1 Section1 mb-4" src="../assets/1.png">
           <img class="col-md-3 m-1 Section1 mb-4" src="../assets/2.png">
           <img class="col-md-3 m-1 Section1" src="../assets/3.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">4-	پس از نصب اپلیکیشن اگر پیام «Untrusted Enterprise Developer» را مشاهده کردید دکمه «Cancel» را بزنید.</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">4-	پس از نصب اپلیکیشن اگر پیام «Untrusted Enterprise Developer» را مشاهده کردید دکمه «Cancel» را بزنید.</h5>
         <div class="d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/4.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">5-	سپس به تنظیمات (Setting) دستگاه بروید و گزینه «General» را انتخاب کنید</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">5-	سپس به تنظیمات (Setting) دستگاه بروید و گزینه «General» را انتخاب کنید. </h5>
         <div class=" d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/5.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">6-	در صفحه جدید گزینه «Device Management» را انتخاب کنید. (در برخی نسخه‌های iOS این گزینه به شکل «Profile & Device Management» نمایش داده می‌شود.)</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">6-	در صفحه جدید گزینه «Device Management» را انتخاب کنید. (در برخی نسخه‌های iOS این گزینه به شکل «Profile & Device Management» نمایش داده می‌شود.)</h5>
         <div class="d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/6.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">7-	گزینه «SCATON LTD» را انتخاب کنید.</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">7-	گزینه «SCATON LTD» را انتخاب کنید.</h5>
         <div class="d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/7.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">8-	عبارت «Trust SCATON LTD» را انتخاب کنید.</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">8-	عبارت «Trust SCATON LTD» را انتخاب کنید.</h5>
         <div class="d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/8.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">9-	در انتها گزینه «Trust» را لمس کنید.</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">9-	در انتها گزینه «Trust» را لمس کنید.</h5>
         <div class="row d-flex flex-row justify-content-center  mb-5 p-5">
           <img class="col-md-3 m-1 Section1 mb-4" src="../assets/9.png">
           <img class="col-md-3 m-1 Section1" src="../assets/10.png">
         </div>
-        <h5 class="mr-2 pl-5 pr-5 mt-5 mb-4">10-	اکنون می‌توانید از اپلیکیشن «کارپینو» لذت ببرید.</h5>
+        <h5 class="mr-2 pl-4 pr-5 mt-5 mb-3">10-	اکنون می‌توانید از اپلیکیشن «کارپینو» لذت ببرید.</h5>
         <div class="d-flex justify-content-center mb-5 p-5">
           <img class="col-md-3 Section1" src="../assets/11.png">
         </div>
@@ -105,12 +105,12 @@ export default {
 }
 
 .description p{
-  text-align: justify;
-  font-size: 0.98em;
+  font-size: 0.9em;
 }
 
 .description h5{
-  /*font-weight: bold;*/
+  font-size: 1.1em;
+  line-height: 2;
 }
 .Section1{
   height: 450px;
@@ -119,30 +119,18 @@ export default {
 .download_link img{
     width: 180px;
   }
-/*.dlBtn{*/
-  /*-webkit-appearance: button;*/
-  /*text-align: center;*/
-  /*width: 250px!important;*/
-  /*height: 55px;*/
-  /*border-radius: 5px;*/
-  /*background-color: black;*/
-  /*border: 1px solid #11111f;*/
-  /*color: whitesmoke!important;*/
-  /*font-family: iranyekan;*/
-  /*font-weight: 500;*/
-  /*font-size: 1em;*/
-/*}*/
 
 @media (min-width: 240px) and (max-width: 768px) {
  .description .title{
-  font-size: 1em;
+  font-size: 0.9em;
 }
   .description p{
     font-size: 0.67em;
+    text-align: justify;
   }
   .description h5{
-    font-size: 0.7em;
-    font-weight: bold;
+    font-size: 0.75em;
+    line-height: 2;
   }
   .description .Section1{
     width: 180px;

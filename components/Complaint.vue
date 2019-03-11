@@ -99,7 +99,7 @@ export default {
   .ComplaintPic{
     display: none;
     visibility: hidden;
-}
+  }
 }
 
 </style>

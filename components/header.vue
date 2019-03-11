@@ -3,13 +3,14 @@
       <div class="container">
         <div class="row d-flex flex-row-reverse header">
           <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
-            <a href="https://www.carpino.ir" class="logo "><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
+            <a href="https://www.carpino.ir" class="logo"><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
+            <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="btn4 mt-4">دریافت اپلیکیشن</button>
             <button v-on:click.prevent="Register()" type="button" class="btn3 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
             <button v-on:click.prevent="Login()" type="button" class="btn3 mt-4 mr-3">ورود  به  پنل سازمانی</button>
           </div>
           <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
             <!--v-scroll-to="'.download'" -->
-            <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class=" btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
+            <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
             <button v-on:click.prevent="navigate3()" type="button" class=" btn2 mt-4 mr-3">قوانین</button>
             <button v-on:click.prevent="navigate4()" type="button" class=" btn2 mt-4 mr-3">شکایات</button>
             <button v-on:click.prevent="navigate1()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
@@ -91,7 +92,7 @@
   border-radius: 4px;
 }
 
-.btn1{
+.btn1, .btn4{
   -webkit-appearance: button;
   max-width: 120px!important;
   height: 45px;
@@ -130,8 +131,70 @@
   font-size: 0.8em;
 }
 
+button:active {
+  outline:none;
+  border: none;
+}
+
+button:focus {
+  outline:none;
+  border: none;
+}
+
 div {
   overflow: hidden;
+}
+
+@media (min-width: 1100px){
+  .btn4{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .btn4 {
+    min-width: 90px !important;
+    font-size: 0.8em;
+    height: 43px;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 750px) {
+  .btn4 {
+    min-width: 90px !important;
+    font-size: 0.7em;
+    height: 40px;
+    margin-right: 11em;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 400px) {
+  .btn4 {
+    min-width: 90px !important;
+    font-size: 0.71em;
+    height: 40px;
+    margin-right: 9em;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 370px){
+  .btn4 {
+    min-width: 90px !important;
+    font-size: 0.71em;
+    height: 40px;
+    margin-right: 6em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 355px){
+  .btn4 {
+    min-width: 87px !important;
+    font-size: 0.7em;
+    height: 40px;
+    margin-right: 4em;
+  }
 }
 
 @media (min-width: 240px) and (max-width: 1024px) {

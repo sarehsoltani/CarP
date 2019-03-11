@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main'
-import about from '@/components/about'
 import header1 from '@/components/header'
+import about from '@/components/about'
 import contact from '@/components/contact'
 import Rules from '@/components/Rules'
 import Complaint from '@/components/Complaint'
@@ -13,17 +13,6 @@ Vue.use(Router);
 Vue.use(vueScrollTo);
 
 export default new Router({
-  // mode: 'history',
-//   scrollBehavior(to, from, savedPosition) {
-//         if (to.hash) {
-//             return { selector: to.hash }
-//         } else if (savedPosition) {
-//             return savedPosition;
-//         } else {
-//             return { x: 0, y: 0 }
-//         }
-//     }
-// ,
   routes: [
     {
       path: '/',
@@ -54,6 +43,6 @@ export default new Router({
       path: '/IOS',
       name: 'IOS',
       component: IOS
-    },
+    }
   ]
 })

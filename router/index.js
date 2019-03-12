@@ -13,6 +13,13 @@ Vue.use(Router);
 Vue.use(vueScrollTo);
 
 export default new Router({
+  scrollBehavior: function(to, from, savedPositon){
+    if (to.hash) {
+      return {selector: to.hash}
+    } else {
+      return {x: 0, y: 0}
+    }
+  },
   routes: [
     {
       path: '/',

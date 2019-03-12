@@ -4,13 +4,19 @@
         <div class="row d-flex flex-row-reverse header">
           <div class="col-md-6 col-sm-6 col-lg-6 d-flex flex-row-reverse">
             <a href="https://www.carpino.ir" class="logo"><img class="img-responsive" src="../assets/CarpinoLogo.png"></a>
+            <!--<router-link v-on:click.prevent="navigate()" to="/#download">-->
+              <!--<button type="button" class="btn4 mt-4 mr-3">دریافت اپلیکیشن</button>-->
+            <!--</router-link>-->
             <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="btn4 mt-4">دریافت اپلیکیشن</button>
             <button v-on:click.prevent="Register()" type="button" class="btn3 mt-4 mr-2 ">ثبت نام پنل سازمانی</button>
             <button v-on:click.prevent="Login()" type="button" class="btn3 mt-4 mr-3">ورود  به  پنل سازمانی</button>
           </div>
           <div class="col-md-6 col-md-6 col-sm-6 col-lg-6">
             <!--v-scroll-to="'.download'" -->
-            <button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="btn1 mt-4 mr-3">دریافت اپلیکیشن</button>
+            <router-link v-on:click.prevent="navigate()" to="/#download" id="routing">
+              <button type="button" class="btn1 mt-4" v-scroll-to="'.download'">دریافت اپلیکیشن</button>
+            </router-link>
+            <!--<button v-on:click.prevent="navigate()" v-scroll-to="'.download'" type="button" class="btn1 mt-4 mr-3">دریافت اپلیکیشن</button>-->
             <button v-on:click.prevent="navigate3()" type="button" class=" btn2 mt-4 mr-3">قوانین</button>
             <button v-on:click.prevent="navigate4()" type="button" class=" btn2 mt-4 mr-3">شکایات</button>
             <button v-on:click.prevent="navigate1()" type="button" class=" btn2 mt-4 mr-3">درباره ما</button>
@@ -48,9 +54,6 @@
       },
       navigate() {
         router.push({ name: "Main" });
-        // let element = this.$refs[refName];
-        // let top = element.offsetTop;
-        //  window.scrollTo(0, top);
       },
       navigate1() {
         router.push({ name: "about" });
@@ -92,7 +95,7 @@
   border-radius: 4px;
 }
 
-.btn1, .btn4{
+.btn1,.btn4{
   -webkit-appearance: button;
   max-width: 120px!important;
   height: 45px;
@@ -101,8 +104,7 @@
   border: 1px solid #11111f;
   color: whitesmoke!important;
   font-family: iranyekan;
-  font-weight: 500;
-  font-size: 0.72em;
+  font-size: 0.6em;
 }
 
 .btn2{
@@ -207,6 +209,10 @@ div {
     visibility: hidden;
   }
   .btn3{
+    display: none;
+    visibility: hidden;
+  }
+  #routing{
     display: none;
     visibility: hidden;
   }

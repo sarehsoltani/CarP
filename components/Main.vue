@@ -18,9 +18,6 @@
             <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
           <!--</a>-->
         </div>
-        <!--Values-->
-         <!--<router-link to="#services">Services</router-link>-->
-       <!--<a class="porto-button" @click="scrollMeTo('porto')">Porto, Portugal</a>-->
         <div class="" style="background-color: white">
           <div class="row justify-content-center values">
             <img class="p-1" style="" src="../assets/c.jpg">
@@ -34,10 +31,9 @@
             <img class="img-responsive col-md-12 col-sm-12 col-lg-12" src='../assets/route.jpg'>
           </div>
         </div>
-        <!--<div ref="porto" class="fl-porto">salam</div>-->
         <!--Download-->
         <div>
-          <div class="download" id="services" style="background-color: white;">
+          <div class="download" id="download" style="background-color: white;">
             <img class="row col-md-5 col-sm-5 col-lg-5 mt-5 img-responsive" id="dlPic" src="../assets/mobile.png">
             <div class="row col-md-7 col-sm-7 col-lg-7 mt-5 d-flex flex-column justify-content-center dlContent">
               <div class="d-flex flex-row justify-content-end m-3" style="text-align: center">
